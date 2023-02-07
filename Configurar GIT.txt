@@ -1,0 +1,43 @@
+
+//Instrucciones para configurar git de manera correcta
+//SIEMPRE UTILIZAR GIT BASH PARA CONFIGURAR GIT Y PARA TRABAJAR CON GIT
+
+	git config --global user.name "fernando soto" //Aqui va el nombre de usuario
+
+	git config --global user.email "fernandosoto@hotmail.com" //Aqui se agrega el correo
+
+	git config --global core.editor "code --await" //Se establece el editor por defecto
+
+//Al momento de subir un repositorio para no tener problemas con salto de linea en los sistemas operativos utilizamos
+
+	/**/ WINDOWS /**/
+		git config --global core.autocrlf true
+
+		
+	/**/ MAC Y LINUX /**/
+		git config --global core.autocrlf input
+	
+//Comandos de git
+
+git add "archivo mas extencion" //para agregar archivos a stage
+
+git commit -m "comentario" para hacer un commit
+
+rm //comando para eliminar archivos
+
+git rm nombre //para ahorrarse tiempo
+
+git restore --stage nombre archivo //sirve para restaurar un archivo
+
+
+git mv [nombre del archivo] [nuevo nombre] //con esto renombramos en stage
+
+git status .s //se mira mas bonito
+
+git diff
+
+git log --oneline
+
+cat sirve para mostrar lo que hay en archivo
+
+git merge [nombre de rama] //para traer una rama al main
